@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <title>The Purishmian | Contact</title>
+  </head>
+  <body>
+    <nav
+      class="nav-container container d-flex justify-content-between align-items-center p-3"
+    >
+      <a href="index.html"><img src="assets/logo.png" class="logo" /></a>
+      <ul class="nav nav-ul">
+        <li class="nav-item">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="articles.html"
+            ><i class="fa-solid fa-newspaper"></i> Articles</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="projects.html"
+            ><i class="fa-solid fa-diagram-project"></i> Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="about.html"><i class="fa-solid fa-info"></i> About us</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-active"
+            ><i class="fa-solid fa-address-book"></i> Contacts</a
+          >
+        </li>
+      </ul>
+      <button type="button" id="navButton">
+        <i class="fa-solid fa-bars" id="navButtonIcon"></i>
+      </button>
+    </nav>
+
+    <div class="container">
+      <form class="form card form-group mt-5 mb-5 p-2 pt-5 pb-5" id="form">
+        <center class="card-title">
+          <img class="logo-in-form" src="assets/logo.png" />
+        </center>
+        <div class="d-flex container flex-wrap input-container-container">
+          <div class="input-container">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="."
+              class="form-control"
+            />
+            <div class="invalid-feedback">
+              Please enter valid name. ex: Juan
+            </div>
+          </div>
+
+          <div class="input-container">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="."
+              class="form-control"
+            />
+            <div class="invalid-feedback">
+              Please enter valid last name. ex: Dela Cruz, Cruz
+            </div>
+          </div>
+        </div>
+        <div class="d-flex container flex-wrap input-container-container">
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="."
+              class="form-control"
+            />
+            <div class="invalid-feedback">
+              Please enter valid email. ex: juan@delacruz.com
+            </div>
+          </div>
+
+          <div class="input-container">
+            <label for="city">City</label>
+            <select name="city" id="city" class="form-control">
+              <option disabled selected></option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+              <option value="city1">city1</option>
+            </select>
+            <div class="invalid-feedback">Please select city.</div>
+          </div>
+        </div>
+        <div class="d-flex container flex-wrap input-container-container">
+          <div class="input-container">
+            <label for="state">State</label>
+            <select name="state" id="state" class="form-control">
+              <option disabled selected></option>
+              <option value="city1">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+              <option value="State">State</option>
+            </select>
+            <div class="invalid-feedback">Please select state.</div>
+          </div>
+
+          <div class="input-container">
+            <label for="zip">Zip Code</label>
+            <input
+              type="number"
+              id="zip"
+              placeholder="."
+              class="form-control"
+            />
+            <div class="invalid-feedback">
+              Please enter valid zip code. ex: 1111
+            </div>
+          </div>
+        </div>
+
+        <div class="input-checkbox">
+          <input type="checkbox" id="terms" class="" />
+          <label for="terms">Agree to terms and conditions</label>
+          <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+
+        <button type="submit" class="btn btnSubmitForm mt-5">Submit</button>
+      </form>
+    </div>
+
+    <footer class="footer p-3">
+        <div class="d-flex justify-content-between contacts-links-container">
+          <a href="https://www.facebook.com/ThePurisimianPub">
+            <i class="fa-brands fa-facebook"></i>
+            facebook.com/ThePurisimianPub
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-location-dot"></i>
+            Arzobispo St., Roxas City, Capiz
+          </a>
+        </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/c6c8edc460.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/app.js"></script>
+  </body>
+</html>
