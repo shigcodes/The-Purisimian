@@ -1,12 +1,12 @@
 <?php
 
-// starting the session
+
 session_start();
 include("connect.php");
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-    // query
+    
     $select_query = "Select * from `users` where username='$username'";
     $result = mysqli_query($con, $select_query);
     $fetch_data = mysqli_fetch_assoc($result);
