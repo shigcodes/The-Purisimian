@@ -48,132 +48,57 @@
     </nav>
 
     <div class="container">
-      <form class="form card form-group mt-5 mb-5 p-2 pt-5 pb-5" id="form">
-        <center class="card-title">
-          <img class="logo-in-form" src="assets/logo.png" />
-        </center>
-        <div class="d-flex container flex-wrap input-container-container">
+      <form action="connect.php" method="post" class="form card form-group mt-5 mb-5 p-2 pt-5 pb-5" id="myForm">
+      <div class="d-flex container flex-wrap input-container-container">
           <div class="input-container">
-            <label for="firstName">First Name</label>
-            <input
-              type="text"
-              id="firstName"
-              placeholder="."
-              class="form-control"
-            />
-            <div class="invalid-feedback">
-              Please enter valid name. ex: Juan
-            </div>
+              <label for="name"> Name</label>
+              <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="."
+                  class="form-control"
+              />
+              <div class="invalid-feedback">
+                  Please enter valid name. ex: Juan
+              </div>
           </div>
-
+      </div>
+      <div class="d-flex container flex-wrap input-container-container">
           <div class="input-container">
-            <label for="lastName">Last Name</label>
-            <input
-              type="text"
-              id="lastName"
-              placeholder="."
-              class="form-control"
-            />
-            <div class="invalid-feedback">
-              Please enter valid last name. ex: Dela Cruz, Cruz
-            </div>
+              <label for="email">Email</label>
+              <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="."
+                  class="form-control"
+              />
+              <div class="invalid-feedback">
+                  Please enter valid email. ex: juan@delacruz.com
+              </div>
           </div>
-        </div>
-        <div class="d-flex container flex-wrap input-container-container">
+      </div>
+      <div class="d-flex container flex-wrap input-container-container">
           <div class="input-container">
-            <label for="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              placeholder="."
-              class="form-control"
-            />
-            <div class="invalid-feedback">
-              Please enter valid email. ex: juan@delacruz.com
-            </div>
+              <label for="phone">Phone</label>
+              <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="."
+                  class="form-control"
+              />
+              <div class="invalid-feedback">
+                  Please enter valid phone number. ex: 0912345678
+              </div>
           </div>
+      </div>
+      <button type="submit" name="submit" id="submitBtn" class="btn btnSubmitForm mt-5">Submit</button>
+    </form>
+        
 
-          <div class="input-container">
-            <label for="city">City</label>
-            <select name="city" id="city" class="form-control">
-              <option disabled selected></option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-              <option value="city1">city1</option>
-            </select>
-            <div class="invalid-feedback">Please select city.</div>
-          </div>
-        </div>
-        <div class="d-flex container flex-wrap input-container-container">
-          <div class="input-container">
-            <label for="state">State</label>
-            <select name="state" id="state" class="form-control">
-              <option disabled selected></option>
-              <option value="city1">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-              <option value="State">State</option>
-            </select>
-            <div class="invalid-feedback">Please select state.</div>
-          </div>
-
-          <div class="input-container">
-            <label for="zip">Zip Code</label>
-            <input
-              type="number"
-              id="zip"
-              placeholder="."
-              class="form-control"
-            />
-            <div class="invalid-feedback">
-              Please enter valid zip code. ex: 1111
-            </div>
-          </div>
-        </div>
-
-        <div class="input-checkbox">
-          <input type="checkbox" id="terms" class="" />
-          <label for="terms">Agree to terms and conditions</label>
-          <div class="invalid-feedback">You must agree before submitting.</div>
-        </div>
-
-        <button type="submit" class="btn btnSubmitForm mt-5">Submit</button>
-      </form>
-    </div>
-
-    <footer class="footer p-3">
-        <div class="d-flex justify-content-between contacts-links-container">
-          <a href="https://www.facebook.com/ThePurisimianPub">
-            <i class="fa-brands fa-facebook"></i>
-            facebook.com/ThePurisimianPub
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-location-dot"></i>
-            Arzobispo St., Roxas City, Capiz
-          </a>
-        </div>
-    </footer>
+    
 
     <script
       src="https://kit.fontawesome.com/c6c8edc460.js"
