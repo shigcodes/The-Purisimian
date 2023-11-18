@@ -71,21 +71,21 @@ if (isset($_POST['register'])) {
                             required="required" autocomplete="off" name="password" aria-label="password"
                             aria-describedby="basic-addon1">
                     </div>
-                    <!-- third field -->
+                
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
                         <input type="password" class="form-control" placeholder="Confirm password" required="required"
                             autocomplete="off" name="confirm_password" aria-label="confirm_password"
                             aria-describedby="basic-addon1">
                     </div>
-                    <!-- signup button -->
+                    
                     <div class="form-group">
                         <input type="submit" name="register" value="Sign Up"
                             class="d-grid gap-2 col-4 mx-auto btn btn-outline-dark">
                     </div>
                 </form>
             </div>
-            <!-- card footer -->
+            
             <div class="card-footer text-center text-dark">
                 Already have an account? <a href="login.php">Log In Here</a>
             </div>
