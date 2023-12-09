@@ -377,6 +377,34 @@
 }
 /* End of Projects */
 
+/* Login */
+.frm-login {
+  max-width: 400px;
+  margin-top: 20vh;
+}
+/* End of Login */
+
+/* Admin */
+.admin-main-container .nav-item .active{
+  background-color: #5b00a0;
+}
+
+.article-photo {
+  height: 70px;
+}
+
+.btn-open-add-article-modal {
+  background-color: #5b00a0;
+  border: none;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-weight: 600;
+}
+/* End of Admin */
+
 /* global */
 .tags {
   background-color: #7300a0;
@@ -394,6 +422,45 @@
 .tags:hover {
   background-color: #63008a;
   color: rgb(240, 240, 240);
+}
+
+.btn-login {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #5b00a0;
+  color: white;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-login span {
+  background-color: rgba(255, 255, 255, 0.863);
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  border-radius: 1px;
+  padding: 5px;
+  z-index: 98;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.alert {
+  position: fixed;
+  z-index: 10000000;
+  top: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: none;
 }
 /* global */
 
